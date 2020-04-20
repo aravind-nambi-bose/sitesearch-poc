@@ -44,7 +44,7 @@ func HandlePutSynonyms(c *gin.Context) {
 				}
 		`)).
 		SetHeader("Content-Type", "application/json").
-		Put("http://localhost:9200/" + indexName + "/_settings") //Example: product_catalog_search_en_us
+		Put("http://elasticsearch:9200/" + indexName + "/_settings") //Example: product_catalog_search_en_us
 
 	if err != nil {
 		fmt.Printf("Error %s", err.Error())

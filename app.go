@@ -17,5 +17,5 @@ func main() {
 
 	router.GET("/index/:indexName", service.HandleSearchProducts)
 
-	router.Run(":8090")
+	router.Run(":8080")
 }
