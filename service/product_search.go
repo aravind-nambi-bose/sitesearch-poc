@@ -60,6 +60,7 @@ func HandleSearchProducts(c *gin.Context) {
 		fmt.Printf("Error %s", err.Error())
 		c.JSON(400, err.Error())
 	} else {
+		c.Header("Access-Control-Allow-Origin", "*")
 		c.Data(200, "application/json", response.Body())
 	}
 }
