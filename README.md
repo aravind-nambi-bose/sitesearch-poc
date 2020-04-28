@@ -28,6 +28,6 @@ Note:
 
 Datamodel: [./model/product.go](./model/product.go)
 
-Script score to relevancy ranking: [/service/product_search.go#L36](/service/product_search.go#L36)
+Script score for relevancy ranking: [/service/product_search.go#L36](/service/product_search.go#L36)
 
 
