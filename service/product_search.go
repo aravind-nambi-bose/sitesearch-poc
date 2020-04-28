@@ -27,7 +27,8 @@ func HandleSearchProducts(c *gin.Context) {
 						"must": {
 			        		"multi_match": {
 			          			"query": "`+query+`",
-					  			"fields": ["productName^100", "*"]	
+					  			"fields": ["productName^100", "*"],
+								"fuzziness" : "AUTO"
 			        		}
 						}
 					}	
